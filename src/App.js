@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button, Card } from 'react-bootstrap';
+import Carousel1 from './components/carousel';
+import Header from './components/header';
 
 function App() {
   return (
-    <div className="App">
-     <Card >
-      
-     </Card>
+    <div >
+    <Header />
+    <Carousel1 />
     </div>
   );
 }
