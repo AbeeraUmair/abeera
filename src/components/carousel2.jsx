@@ -4,10 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Carousel2() {
   return (
     <div className="carousel2">
-      <p className="new">
+      <div>
+         <p className="new">
         WHAT'S
         <br /> NEW
       </p>
+      </div>
+     <div>
       <Carousel className="caro">
 
         <Carousel.Item interval={1000}>
@@ -65,6 +68,7 @@ function Carousel2() {
           </div>
         </Carousel.Item>
       </Carousel>
+      </div>
     </div>
   );
 }

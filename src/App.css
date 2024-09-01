@@ -1,12 +1,13 @@
 .header {
   margin: .4rem;
-  display: flex !important;
+ 
   align-items: center;
   justify-content: space-between !important ;
 }
 
 .header-logo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .header-icons {
@@ -15,9 +16,10 @@
   padding: 0rem;
   align-items: center;
 }
+
 .sa {
   letter-spacing: 0.5rem;
-  margin-left: 1rem;
+  margin-left: -40rem;
 }
 .search{
   margin: .1rem;
@@ -32,18 +34,29 @@ height: 150px;
 .new{
 font-size: 4rem;
 padding: 4rem;
+float: left;
+width: 20%;
 }
 .carousel2{
-  display: inline-block;
-  align-items: center;
-  justify-content: space-between ;
+  /* display: inline-block; */
+  /* align-items: center; */
+  /* justify-content: space-between ; */
   margin-top: 1rem;
 }
 .carousel2 p{
   font-size: rem;
+  text-align: center;
+  
+}
+.caro{
+  float: right;
+  width: 70%;
+  overflow: -moz-hidden-scrollable;
+
 }
 .caro div{
   display: inline-block;
   align-items: center;
   margin: .2rem;
 }
+
