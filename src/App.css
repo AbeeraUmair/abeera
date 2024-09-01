@@ -28,8 +28,9 @@
 .img-carousel2{
 border-radius: 10rem;
 border: 2px solid gray;
-width: 150px;
-height: 150px;
+overflow-y: scroll;
+width: 100%;
+height: 25vh;
 }
 .new{
 font-size: 4rem;
@@ -50,13 +51,27 @@ width: 20%;
 }
 .caro{
   float: right;
-  width: 70%;
-  overflow: -moz-hidden-scrollable;
-
+display: inline-flex;
 }
+
 .caro div{
   display: inline-block;
   align-items: center;
   margin: .2rem;
 }
 
+.caro3 div{
+  display: inline-block;
+  align-items: center;
+  margin: rem;
+
+}
+.caro3  p{
+  text-align: center;
+}
+.img-bycategory{
+width: 18rem;
+height: 18rem;
+margin: .5rem;
+ 
+}

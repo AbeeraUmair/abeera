@@ -4,16 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Carousel2() {
   return (
     <div className="carousel2">
-      <div>
+    
+     <div>
+      <Carousel className="caro d-block w-200">
+  <div>
          <p className="new">
         WHAT'S
         <br /> NEW
       </p>
       </div>
-     <div>
-      <Carousel className="caro">
-
-        <Carousel.Item interval={1000}>
+        <Carousel.Item  >
           
           <div>
           <img
@@ -22,6 +22,9 @@ function Carousel2() {
           />
           <p>Nulla vitae </p>
           </div>
+
+          <Carousel.Item>
+          </Carousel.Item>
           <div>
           <img
             className="img-carousel2"
@@ -29,6 +32,9 @@ function Carousel2() {
           />
           <p>Lorem ipsum dolor</p>
           </div>
+
+          <Carousel.Item>
+          </Carousel.Item>
           <div>
           <img
             className="img-carousel2"
@@ -37,6 +43,9 @@ function Carousel2() {
           />
           <p>Praesent commodo</p>
           </div>
+          <Carousel.Item>
+          </Carousel.Item>
+
           <div>
           <img
             className="img-carousel2"
@@ -44,6 +53,9 @@ function Carousel2() {
           />
           <p>Praesent commodo</p>
           </div>
+
+          <Carousel.Item>
+          </Carousel.Item>
           <div>
           <img
             className="img-carousel2"
@@ -51,7 +63,8 @@ function Carousel2() {
           />
           <p>Praesent commodo</p>
           </div>
-          
+          <Carousel.Item>
+          </Carousel.Item>
           <div>
           <img
             className="img-carousel2"
@@ -59,6 +72,8 @@ function Carousel2() {
           />
           <p>Praesent commodo .</p>
           </div>
+          <Carousel.Item>
+          </Carousel.Item>
           <div>
           <img
             className="img-carousel2"
@@ -66,6 +81,7 @@ function Carousel2() {
           />
           <p>Praesent commodo</p>
           </div>
+
         </Carousel.Item>
       </Carousel>
       </div>
