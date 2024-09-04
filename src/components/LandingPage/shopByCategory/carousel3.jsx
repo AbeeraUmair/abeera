@@ -6,7 +6,7 @@ function Carousel3() {
     <div>
         <h1 className="text-center">SHOP BY CATEGORY</h1>
         <hr />
-        <Carousel>
+        <Carousel style={{marginLeft : '2rem'}}>
       <Carousel.Item  className="caro3">
       <div>
           <img

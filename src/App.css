@@ -77,14 +77,14 @@
 #search-box {
   position: relative;
   width: 100%;
-  height: 10rem;
+  height: 3.5rem;
 }
 
 .centered-form{
   position: relative;
   display: block;
-  margin: auto;
-  width: 20rem;
+  margin: .5rem;
+  width: 97.5%;
   height: 2.8rem;
 }
 
@@ -100,8 +100,8 @@
 
 #mag-container {
   position: absolute;
-  top: 1rem;
-  left: 1.3rem;
+  top: .5rem;
+  right: 1.3rem;
   background: transparent;
   border: 0;
   padding: 0;

@@ -1,6 +1,11 @@
 import React from "react";
 import  Form  from "react-bootstrap/Form";
 import InputGroup  from "react-bootstrap/InputGroup";
+import { CiLocationOn } from "react-icons/ci";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
+import { LuPhone } from "react-icons/lu";
+import { MdOutlineMailOutline } from "react-icons/md";
+
 
 const Footer = () => {
   return (
@@ -11,11 +16,11 @@ const Footer = () => {
         <div style={{ width: "50%",margin :'.5rem', }}>
           <h6> CONTACT US</h6>
           <p>
-            Sapphire Retail Head Office 1.5-Km, Defence Road, Bhobtian Chowk,
+          <CiLocationOn /> Sapphire Retail Head Office 1.5-Km, Defence Road, Bhobtian Chowk,
             Off Raiwind Road, Opposite University of Lahore, Lahore.
           </p>
-          <p> wecare@sapphireonline.pk</p>
-          <p>+92(0)42 111-738-245</p>
+          <p><MdOutlineMailOutline /> wecare@sapphireonline.pk</p>
+          <p><LuPhone/> +92(0)42 111-738-245</p>
         </div>
         <div style={{ width: "50%",margin :'.5rem', }}>
           <h6> CUSTOMER CARE</h6>
@@ -44,15 +49,20 @@ const Footer = () => {
           <p>Subscribe to our Newsletter for Exclusive Updates</p>
           <InputGroup className="mb-3">
         <Form.Control
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
+          placeholder="Your email address"
+          aria-label="Your email address"
           aria-describedby="basic-addon2"
        
        />
         <InputGroup.Text id="basic-addon2" style={{backgroundColor : 'black',color : 'white',}}>Subscribe</InputGroup.Text>
 
       </InputGroup>
+       <FaFacebookF style={{fontSize :'1.5rem',}}/>
+       <FaInstagram style={{fontSize :'1.7rem',margin: '1rem',}} />
+       <FaYoutube style={{fontSize :'1.9rem' ,margin: '.5rem',}} />
+
         </div>
+       
       </div>
     </div>
   );

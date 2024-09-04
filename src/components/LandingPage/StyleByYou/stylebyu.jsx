@@ -4,7 +4,7 @@ import  Carousel  from 'react-bootstrap/Carousel'
 const Stylebyu = () => {
   return (
    
-      <div style={{backgroundColor : 'rgb(254, 249, 232)',}}>
+      <div style={{backgroundColor : 'rgb(254, 249, 232)',}} >
         <h1 className="text-center">STYLED BY YOU</h1>
         <h4 className="text-center">#SAPPHIREXME</h4>
         

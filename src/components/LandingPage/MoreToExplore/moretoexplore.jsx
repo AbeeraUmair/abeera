@@ -1,6 +1,6 @@
 import React from 'react'
 import  Carousel  from 'react-bootstrap/Carousel'
-import AOS from '../../node_modules/aos/dist/aos';
+import AOS from 'aos/dist/aos';
 import 'aos/dist/aos.css';
 
 const Moretoexplore = () => {
@@ -10,7 +10,7 @@ const Moretoexplore = () => {
     <div>
     <h1 className="text-center">MORE TO EXPLORE</h1>
     <hr />
-    <Carousel>
+    <Carousel style={{marginLeft : '2rem'}}>
   <Carousel.Item  className="more">
   <div>
       <img
@@ -59,6 +59,18 @@ const Moretoexplore = () => {
         src="https://cdn.shopify.com/s/files/1/1592/0041/files/more-to-explore_69e767f0-c94c-4205-9fbf-ada217269011.jpg?v=1723731851"
       />
       </div>
+      <div>
+      <img
+        className="img-bycategory"
+        src="https://cdn.shopify.com/s/files/1/1592/0041/files/more-to-explore2.jpg?v=1723731851"
+      />
+      </div>
+      <div>
+  <img
+        className="img-bycategory" data-aos="zoom-in"
+        src="https://cdn.shopify.com/s/files/1/0026/9238/2780/files/mommy_and_me.jpg?v=1723114267"
+      />
+     </div>
   </Carousel.Item>
 </Carousel>
 </div>
