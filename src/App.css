@@ -1,6 +1,5 @@
 .header {
   margin: 0.4rem;
-
   align-items: center;
   justify-content: space-between !important ;
 }
@@ -15,65 +14,26 @@
   padding: 0rem;
   align-items: center;
 }
-
 .sa {
   letter-spacing: 0.5rem;
   margin-left: -40rem;
 }
 
 
-.img-carousel2 {
-  border-radius: 10rem;
-  border: 2px solid gray;
-  overflow-y: scroll;
-  width: 100%;
-  height: 25vh;
-}
-.new {
-  font-size: 4rem;
-  padding: 4rem;
-  float: left;
-  width: 20%;
-}
-.carousel2 {
-  /* display: inline-block; */
-  /* align-items: center; */
-  /* justify-content: space-between ; */
-  margin-top: 1rem;
-}
-.carousel2 p {
-  font-size: rem;
-  text-align: center;
-}
-.caro {
-  float: right;
-  display: inline-flex;
-}
-
-.caro div {
-  display: inline-block;
-  align-items: center;
-  margin: 0.2rem;
-}
-
 .caro3 div {
   display: inline-block;
   align-items: center;
-  margin: rem;
 }
 .caro3 p {
   text-align: center;
 }
 .img-bycategory {
-  width: 18rem;
-  height: 18rem;
-  margin: 0.5rem;
+  /* width: 15rem; */
+  height: 15rem;
+  margin: .2rem;
+  /* object-fit: cover; */
 }
-.more div {
-  display: inline-block;
-  align-items: center;
-  margin: 0.5rem;
-}
+
 #search-box {
   position: relative;
   width: 100%;

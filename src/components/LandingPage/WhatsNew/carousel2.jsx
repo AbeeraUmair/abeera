@@ -1,89 +1,73 @@
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { whatsNew } from "../../../Data/data";
+
 
 function Carousel2() {
+  // Split the data into chunks of 4
+  const chunkedData = [];
+  for (let i = 0; i < whatsNew.length; i += 4) {
+    chunkedData.push(whatsNew.slice(i, i + 4));
+  }
+
   return (
-    <div className="carousel2">
-    
-     <div>
-      <Carousel className="caro d-block w-200">
-  <div>
-         <p className="new">
-        WHAT'S
-        <br /> NEW
-      </p>
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        marginLeft: "auto",
+        marginRight: "2rem",
+        marginBottom : '3rem' ,
+        marginTop :'3rem',
+      }}
+    >
+      <div>
+        <p
+          style={{
+            fontSize: "3rem",
+            padding: "1rem",
+            marginLeft: "3rem",
+            width: "20%",
+          }}
+        >
+          WHAT'S
+          <br /> NEW
+        </p>
       </div>
-        <Carousel.Item  >
-          
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/Daily-Unstitched-Intermix.jpg?v=1723717371&width=200"
-          />
-          <p>Nulla vitae </p>
-          </div>
-
-          <Carousel.Item>
-          </Carousel.Item>
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/Tie-_-Dye-Ready-to-Wear-Intermix.jpg?v=1723717413&width=200"
-          />
-          <p>Lorem ipsum dolor</p>
-          </div>
-
-          <Carousel.Item>
-          </Carousel.Item>
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/Kids-New-Arrivals.jpg?v=1723717506&width=200"
-           
-          />
-          <p>Praesent commodo</p>
-          </div>
-          <Carousel.Item>
-          </Carousel.Item>
-
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/whats-new-_-west-new-arrivals.jpg?v=1724304199&width=200"
-          />
-          <p>Praesent commodo</p>
-          </div>
-
-          <Carousel.Item>
-          </Carousel.Item>
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/Ready-to-Wear-Summer-_24.jpg?v=1723717815&width=200"
-          />
-          <p>Praesent commodo</p>
-          </div>
-          <Carousel.Item>
-          </Carousel.Item>
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/mens-outfits.jpg?v=1723718485&width=200"
-          />
-          <p>Praesent commodo .</p>
-          </div>
-          <Carousel.Item>
-          </Carousel.Item>
-          <div>
-          <img
-            className="img-carousel2"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/fragrance-what_s-new.jpg?v=1719828912&width=200"
-          />
-          <p>Praesent commodo</p>
-          </div>
-
-        </Carousel.Item>
-      </Carousel>
+      <div style={{ width: "80%" }}>
+        <Carousel>
+          {chunkedData.map((dataChunk, index) => (
+            <Carousel.Item key={index}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  textAlign :'center',
+                }}
+              >
+                {dataChunk.map((data, idx) => (
+                  <div key={idx} style={{ flex: "1", padding: "0 1rem" }}>
+                    <img
+                      style={{
+                        borderRadius: "10rem",
+                        border: "2px solid gray",
+                        width: "100%",
+                        height: "25vh",
+                      }}
+                      src={data.image}
+                     
+                    />
+                    
+                      <p style={{ fontSize: "1rem", }}>
+                        {data.para}
+                      </p>
+                    
+                  </div>
+                ))}
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </div>
   );

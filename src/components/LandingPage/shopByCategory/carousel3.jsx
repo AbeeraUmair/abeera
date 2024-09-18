@@ -1,83 +1,49 @@
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { shopByCategory } from "../../../Data/data";
 
 function Carousel3() {
+  // Split the data into chunks of 4
+  const chunkData = [];
+  for (let i = 0; i < shopByCategory.length; i += 4) {
+    chunkData.push(shopByCategory.slice(i, i + 4));
+  }
   return (
     <div>
-        <h1 className="text-center">SHOP BY CATEGORY</h1>
-        <hr />
-        <Carousel style={{marginLeft : '2rem'}}>
-      <Carousel.Item  className="caro3">
-      <div>
-          <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-accessories_7ae208fe-1be3-4922-add6-3b7956108ce1.jpg?v=1721296694&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-          <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-_-us.jpg?v=1723718649&width=400"
-          />
-          <p>Nulla vitae </p>
-         </div>
+      <center>
+      <div style={{width:'25%',}}>
+      <h1 className="text-center " style={{fontSize:'1.7rem',}}>SHOP BY CATEGORY</h1>
+      <hr />
+      </div>
       
-          <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-_-rtw.jpg?v=1724304306&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-      </Carousel.Item>
-      <Carousel.Item  className="caro3">
-      <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-_-man-2.jpg?v=1723718648&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-          <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-_-west_5eb36ed9-0a78-4253-99e6-a9d5d63b0eb3.jpg?v=1724304324&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-          <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-kids_fe3a6287-800c-4e7a-acbf-e2c08776791b.jpg?v=1723112862&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-         </Carousel.Item>
-         <Carousel.Item  className="caro3">
-      <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-fragrance.jpg?v=1723112862&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-          <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-_-modest.jpg?v=1723718648&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-          <div>
-      <img
-            className="img-bycategory"
-            src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-home_8532312c-cad4-4121-a657-3206a4af4eae.jpg?v=1723112863&width=400"
-          />
-          <p>Nulla vitae </p>
-          </div>
-      </Carousel.Item>
-    </Carousel>
+      <Carousel
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          margin: "rem 2rem",
+        }}
+      >
+        {chunkData.map((dataChunk, index) => (
+          <Carousel.Item className="caro3" key={index}>
+            {dataChunk.map((data, idx) => (
+              <div key={idx} style={{ padding: "rem", textAlign: "center" }}>
+                <img
+                  className="img-bycategory"
+                  //  style={{width :'25vw',
+
+                  //  }}
+                  src={data.image}
+                />
+
+                <p style={{ fontSize: "1.2rem" ,fontWeight:'600'}}>{data.para}</p>
+              </div>
+            ))}
+          </Carousel.Item>
+        ))}
+      </Carousel>
+      </center>
     </div>
   );
 }

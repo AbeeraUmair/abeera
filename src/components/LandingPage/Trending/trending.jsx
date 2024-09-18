@@ -1,311 +1,96 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { MdOutlineShoppingBag } from "react-icons/md";
+import { trending } from "../../../Data/data";
+import "./style.css";
 
 const Trending = () => {
+  // Split the data into chunks of 3
+  const chunkedData = [];
+  for (let i = 0; i < trending.length; i += 3) {
+    chunkedData.push(trending.slice(i, i + 3));
+  }
   return (
-    <div >
-      <h1 className="text-center" >TRENDING</h1>
-      <hr />
-      <Carousel style={{marginLeft : '2rem'}}>
-        <Carousel.Item className="caro3">
-          <div>
-            <img
-              className="img-bycategory"
-             id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2111ST_2.jpg?v=1723705026&width=400"
-            />
-            <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+    <div>
+      <center>
+        <div style={{ width: "20%", marginTop: "1rem" }}>
+          <h1 style={{ fontSize: "1.7rem", letterSpacing: ".1rem" }}>
+            TRENDING
+          </h1>
+          <hr />
+        </div>
 
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/0PFFSW24V212_3.jpg?v=1724228427&width=400"
-            />
-             <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/0STDFW24V241_3.jpg?v=1723700832&width=400"
-            />
-             <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
+        <Carousel
+          style={{
+            width: "100%",
+            
+          }}
         
-        <Carousel.Item className="caro3">
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2108ST_5.jpg?v=1723700773&width=400"
-            />
-        <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2177SD_5.jpg?v=1723700883&width=400"
-            />
-             <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-            </div>
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2169SD_5.jpg?v=1723703651&width=400"
-            />
-       <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item className="caro3">
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2169SD_5.jpg?v=1723703651&width=400"
-            />
-            <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2159SD_1.jpg?v=1723702184&width=400"
-            />
-            <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <img
-              className="img-bycategory"
-               id="hover-img"
-              src="https://pk.sapphireonline.pk/cdn/shop/files/2DF24V2161SD_2.jpg?v=1723702205&width=400"
-            />
-             <div
-              style={{
-                display: "flex",
-                textAlign: "left",
-                margin: ".5rem",
-                lineHeight: ".2rem",
-              }}
-            >
-              <div>
-                <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
-                  PRINTED CAMBRIC SHIRT
-                </p>
-                <p style={{ fontSize: ".8rem" }}>Intermix '24</p>
-                <p style={{ fontSize: ".7rem" }}>Rs.2,690.00</p>
-              </div>
-              <div style={{}}>
-                <MdOutlineShoppingBag
-                  style={{
-                    marginTop: "-.5rem",
-                    marginLeft: "7.5rem",
-                    fontSize: "2rem",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
-      </Carousel>
+        >
+          {chunkedData.map((dataChunked, index) => (
+            <Carousel.Item className="caro3" key={index}>
+              {dataChunked.map((data, idx) => (
+                <div
+                  key={idx}
+                  style={{ width: "30%", margin: "", textAlign: "center" }}
+                >
+                  <div
+                    style={{
+                      border: "1px solid gray",
+                      borderRadius: "2rem",
+                      marginTop: "rem",
+                      height: "3rem",
+                      width: "3rem",
+                      position: "relative",
+                      top: "3.5rem",
+                      left: "7rem",
+                      backgroundColor: "white",
+                      opacity: ".7",
+                      zIndex: "5",
+                    }}
+                  >
+                    sold
+                    <br /> out
+                  </div>
+                  <img className="img-trending" src={data.image} />
+                  <div
+                    style={{
+                      display: "flex",
+                      margin: ".5rem .5rem",
+                      lineHeight: ".1rem",
+                      width: "15rem",
+                    }}
+                  >
+                    <div>
+                      <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
+                        {data.p}
+                      </p>
+                      <p style={{ fontSize: ".8rem", textAlign: "left" }}>
+                        {data.para}
+                      </p>
+                      <p style={{ fontSize: ".7rem", textAlign: "left" }}>
+                        {data.pkr}
+                      </p>
+                    </div>
+                    <div style={{ float: "right" }}>
+                      <MdOutlineShoppingBag
+                        style={{
+                          float: "right",
+                          marginTop: "-2rem",
+                          fontSize: "1.5rem",
+                          position: "relative",
+                          top: "rem",
+                          left: "4rem",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </center>
     </div>
   );
 };

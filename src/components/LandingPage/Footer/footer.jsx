@@ -15,13 +15,28 @@ const Footer = () => {
       >
         <div style={{ width: "50%",margin :'.5rem', }}>
           <h6> CONTACT US</h6>
-          <p>
-          <CiLocationOn /> Sapphire Retail Head Office 1.5-Km, Defence Road, Bhobtian Chowk,
-            Off Raiwind Road, Opposite University of Lahore, Lahore.
+          <div style={{ display: "flex", fontSize:'.9rem',}}>
+            <div >
+            <CiLocationOn style={{width:'1.5rem',height:'1.5rem',marginTop:'.2rem',}} />
+            </div>
+            <div style={{marginLeft:'.5rem',}}>
+              <p>
+           Sapphire Retail Head Office<br/> 1.5-Km, Defence Road, Bhobtian Chowk,
+            Off Raiwind Road, Opposite<br/> University of Lahore, Lahore.
           </p>
-          <p><MdOutlineMailOutline /> wecare@sapphireonline.pk</p>
-          <p><LuPhone/> +92(0)42 111-738-245</p>
+            </div>
+          </div>
+          <div style={{ display: "flex", }}>
+            <div><MdOutlineMailOutline style={{width:'1.5rem',height:'1.5rem',marginTop:'.2rem',}} /> </div>
+            <div style={{marginLeft:'.5rem',}}><p>wecare@sapphireonline.pk</p></div>
+          </div>
+          <div style={{ display: "flex", }}>
+            <div><LuPhone  style={{width:'1.5rem',height:'1.5rem',marginTop:'.2rem',}}/></div>
+            <div style={{marginLeft:'.5rem',}}><p>
+          +92(0)42 111-738-245</p></div>
+          </div>
         </div>
+
         <div style={{ width: "50%",margin :'.5rem', }}>
           <h6> CUSTOMER CARE</h6>
           <p>
@@ -30,8 +45,9 @@ const Footer = () => {
             Contact Us
           </p>
         </div>
+
       </div>
-      <div
+      <div 
         style={{
           display: "flex",
           backgroundColor: "#f6f6f8",
@@ -39,7 +55,7 @@ const Footer = () => {
         }}
       >
         <div style={{ width: "50%" ,margin :'.5rem', }}>
-          <h6>INFORMATION</h6>
+          <h6 style={{lineh}}>INFORMATION</h6>
           About Us <br /> Privacy Policy <br /> SafePay Guide  <br />Payments  <br />Store Locator <br /> Fabric
           Glossary  <br />Blogs <br />
         </div>

@@ -1,14 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import carouselData from '../../../Data/data';
+import {carouselData} from '../../../Data/data';
 
 function Carousel1() {
-    
+
   return (
     <div>
     <Carousel >
     {carouselData.map((data, index) => (
-      <Carousel.Item key={data.id}>
+      <Carousel.Item key={index}>
         <img
           className="d-block w-100"
           src={data.image}
