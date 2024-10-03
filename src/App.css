@@ -10,13 +10,13 @@
   align-items: center;
 }
 .header-icons {
-  font-size: x-large;
+  font-size: 4vw;
   padding: 0rem;
   align-items: center;
 }
 .sa {
   letter-spacing: 0.5rem;
-  margin-left: -40rem;
+  margin-left: vw;
 }
 
 
@@ -28,10 +28,11 @@
   text-align: center;
 }
 .img-bycategory {
-  /* width: 15rem; */
-  height: 15rem;
+  width: 22vw;
+  height: 22vw;
   margin: .2rem;
-  /* object-fit: cover; */
+  /* object-fit: contain; */
+
 }
 
 #search-box {

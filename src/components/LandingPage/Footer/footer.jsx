@@ -55,7 +55,7 @@ const Footer = () => {
         }}
       >
         <div style={{ width: "50%" ,margin :'.5rem', }}>
-          <h6 style={{lineh}}>INFORMATION</h6>
+          <h6 >INFORMATION</h6>
           About Us <br /> Privacy Policy <br /> SafePay Guide  <br />Payments  <br />Store Locator <br /> Fabric
           Glossary  <br />Blogs <br />
         </div>

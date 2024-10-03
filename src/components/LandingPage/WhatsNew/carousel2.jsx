@@ -24,17 +24,18 @@ function Carousel2() {
       <div>
         <p
           style={{
-            fontSize: "3rem",
-            padding: "1rem",
-            marginLeft: "3rem",
-            width: "20%",
+            fontSize: "5vw",
+            padding: ".5vw",
+            // marginLeft: "3vw",
+            margin:"2vw 1vw",
+            width: "18vw",
           }}
         >
           WHAT'S
           <br /> NEW
         </p>
       </div>
-      <div style={{ width: "80%" }}>
+      <div style={{ width: "80vw" }}>
         <Carousel>
           {chunkedData.map((dataChunk, index) => (
             <Carousel.Item key={index}>
@@ -46,19 +47,19 @@ function Carousel2() {
                 }}
               >
                 {dataChunk.map((data, idx) => (
-                  <div key={idx} style={{ flex: "1", padding: "0 1rem" }}>
+                  <div key={idx} style={{ flex: "1", padding: "0 .2vw",margin:'.2vw' }}>
                     <img
                       style={{
-                        borderRadius: "10rem",
+                        borderRadius: "10vw",
                         border: "2px solid gray",
-                        width: "100%",
-                        height: "25vh",
+                        width: "20vw",
+                        height: "12vh",
                       }}
                       src={data.image}
                      
                     />
                     
-                      <p style={{ fontSize: "1rem", }}>
+                      <p style={{ fontSize: "1.8vw", }}>
                         {data.para}
                       </p>
                     

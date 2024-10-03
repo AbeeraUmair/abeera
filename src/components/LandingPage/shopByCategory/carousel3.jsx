@@ -12,7 +12,7 @@ function Carousel3() {
     <div>
       <center>
       <div style={{width:'25%',}}>
-      <h1 className="text-center " style={{fontSize:'1.7rem',}}>SHOP BY CATEGORY</h1>
+      <h1 className="text-center " style={{fontSize:'2vw',}}>SHOP BY CATEGORY</h1>
       <hr />
       </div>
       
@@ -21,8 +21,8 @@ function Carousel3() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          width: "100%",
-          margin: "rem 2rem",
+          width: "100vw",
+          margin: "1vw vw",
         }}
       >
         {chunkData.map((dataChunk, index) => (

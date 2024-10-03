@@ -6,10 +6,10 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header sm-12 ">
       <div className="header-logo">
         <RxHamburgerMenu className="header-icons" />
-        <h1 className="sa">SAPPHIRE</h1>
+        <h1 className="sa  ">SAPPHIRE</h1>
         <div className="header-icon">
           <IoSearch className="header-icons" />
           <FaTruckDroplet className="header-icons" />
