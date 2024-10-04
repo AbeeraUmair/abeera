@@ -9,7 +9,7 @@ const Header = () => {
     <div className="header sm-12 ">
       <div className="header-logo">
         <RxHamburgerMenu className="header-icons" />
-        <h1 className="sa  ">SAPPHIRE</h1>
+        <h1 className="sa  " style={{fontSize:"6vw"}}>SAPPHIRE</h1>
         <div className="header-icon">
           <IoSearch className="header-icons" />
           <FaTruckDroplet className="header-icons" />

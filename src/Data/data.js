@@ -73,6 +73,30 @@ const whatsNew = [
       "https://pk.sapphireonline.pk/cdn/shop/files/Daily-Unstitched-Intermix.jpg?v=1723717371&width=200",
     para: "Praesent commodo",
   },
+  {
+    id: "9",
+    image:
+      "https://pk.sapphireonline.pk/cdn/shop/files/Tie-_-Dye-Ready-to-Wear-Intermix.jpg?v=1723717413&width=200",
+    para: "Praesent commodo",
+  },
+  {
+    id: "10",
+    image:
+      "https://pk.sapphireonline.pk/cdn/shop/files/Kids-New-Arrivals.jpg?v=1723717506&width=200",
+    para: "Praesent commodo",
+  },
+  {
+    id: "11",
+    image:
+      "https://pk.sapphireonline.pk/cdn/shop/files/whats-new-_-west-new-arrivals.jpg?v=1724304199&width=200",
+    para: "Praesent commodo",
+  },
+  {
+    id: "12",
+    image:
+      "https://pk.sapphireonline.pk/cdn/shop/files/Ready-to-Wear-Summer-_24.jpg?v=1723717815&width=200",
+    para: "Praesent commodo",
+  },
 ];
 
 export { whatsNew };
@@ -324,8 +348,7 @@ const styledByYou = [
     para:"wearing our",
     dress:'Seersucker Shirt- Dress with Pocket',
 
-  },
-  
+  },  
 ]
 
 export {styledByYou};

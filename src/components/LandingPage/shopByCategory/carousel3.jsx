@@ -11,8 +11,8 @@ function Carousel3() {
   return (
     <div>
       <center>
-      <div style={{width:'25%',}}>
-      <h1 className="text-center " style={{fontSize:'2vw',}}>SHOP BY CATEGORY</h1>
+      <div style={{width:'30%',}}>
+      <h1 className="text-center " style={{fontSize: '2.67vh',}}>SHOP BY CATEGORY</h1>
       <hr />
       </div>
       
@@ -21,23 +21,19 @@ function Carousel3() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          width: "100vw",
-          margin: "1vw vw",
+          width: "100%",
+          gap :"1",
         }}
       >
         {chunkData.map((dataChunk, index) => (
           <Carousel.Item className="caro3" key={index}>
             {dataChunk.map((data, idx) => (
-              <div key={idx} style={{ padding: "rem", textAlign: "center" }}>
+              <div key={idx} style={{ textAlign: "center" }}>
                 <img
                   className="img-bycategory"
-                  //  style={{width :'25vw',
-
-                  //  }}
                   src={data.image}
                 />
-
-                <p style={{ fontSize: "1.2rem" ,fontWeight:'600'}}>{data.para}</p>
+                <p style={{ fontSize: "1.5vh" ,fontWeight:'600'}}>{data.para}</p>
               </div>
             ))}
           </Carousel.Item>

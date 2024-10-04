@@ -6,8 +6,8 @@ import { whatsNew } from "../../../Data/data";
 function Carousel2() {
   // Split the data into chunks of 4
   const chunkedData = [];
-  for (let i = 0; i < whatsNew.length; i += 4) {
-    chunkedData.push(whatsNew.slice(i, i + 4));
+  for (let i = 0; i < whatsNew.length; i += 6) {
+    chunkedData.push(whatsNew.slice(i, i + 6));
   }
 
   return (
@@ -47,13 +47,13 @@ function Carousel2() {
                 }}
               >
                 {dataChunk.map((data, idx) => (
-                  <div key={idx} style={{ flex: "1", padding: "0 .2vw",margin:'.2vw' }}>
+                  <div key={idx} style={{ display: "flex",flexDirection:"column", padding: ".5vh",gap:'1.5vw' }}>
                     <img
                       style={{
-                        borderRadius: "10vw",
+                        borderRadius: "15vh",
                         border: "2px solid gray",
-                        width: "20vw",
-                        height: "12vh",
+                        width : "14vh",
+                        height: "13vh",
                       }}
                       src={data.image}
                      

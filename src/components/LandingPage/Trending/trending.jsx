@@ -3,18 +3,18 @@ import Carousel from "react-bootstrap/Carousel";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { trending } from "../../../Data/data";
 import "./style.css";
-
+import { Col } from "react-bootstrap";
 const Trending = () => {
   // Split the data into chunks of 3
   const chunkedData = [];
-  for (let i = 0; i < trending.length; i += 3) {
-    chunkedData.push(trending.slice(i, i + 3));
+  for (let i = 0; i < trending.length; i += 4) {
+    chunkedData.push(trending.slice(i, i + 4));
   }
   return (
     <div>
       <center>
-        <div style={{ width: "20%", marginTop: "1rem" }}>
-          <h1 style={{ fontSize: "1.7rem", letterSpacing: ".1rem" }}>
+        <div style={{ width: "30%", marginTop: "1rem" }}>
+          <h1 style={{ fontSize: "2.67vh", letterSpacing: ".1rem" }}>
             TRENDING
           </h1>
           <hr />
@@ -30,9 +30,10 @@ const Trending = () => {
           {chunkedData.map((dataChunked, index) => (
             <Carousel.Item className="caro3" key={index}>
               {dataChunked.map((data, idx) => (
+              <Col xs={12} md={8} lg={4}>
                 <div
-                  key={idx}
-                  style={{ width: "30%", margin: "", textAlign: "center" }}
+                key={idx}
+                style={{ width: "30%", margin: "", textAlign: "center" }}
                 >
                   <div
                     style={{
@@ -86,9 +87,12 @@ const Trending = () => {
                     </div>
                   </div>
                 </div>
+              </Col>  
+
               ))}
             </Carousel.Item>
-          ))}
+          ))
+          }
         </Carousel>
       </center>
     </div>
