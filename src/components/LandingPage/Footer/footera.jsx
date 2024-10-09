@@ -13,5 +13,4 @@ const Footera = () => {
     </div>
   )
 }
-
 export default Footera

@@ -7,8 +7,8 @@ import { Col } from "react-bootstrap";
 const Trending = () => {
   // Split the data into chunks of 3
   const chunkedData = [];
-  for (let i = 0; i < trending.length; i += 4) {
-    chunkedData.push(trending.slice(i, i + 4));
+  for (let i = 0; i < trending.length; i += 3) {
+    chunkedData.push(trending.slice(i, i + 3));
   }
   return (
     <div>
@@ -23,14 +23,13 @@ const Trending = () => {
         <Carousel
           style={{
             width: "100%",
-            
+            objectFit:"cover",        
           }}
         
         >
           {chunkedData.map((dataChunked, index) => (
-            <Carousel.Item className="caro3" key={index}>
+            <Carousel.Item className="caro3 container-fluid px-3 mx-auto" key={index}>
               {dataChunked.map((data, idx) => (
-              <Col xs={12} md={8} lg={4}>
                 <div
                 key={idx}
                 style={{ width: "30%", margin: "", textAlign: "center" }}
@@ -39,12 +38,12 @@ const Trending = () => {
                     style={{
                       border: "1px solid gray",
                       borderRadius: "2rem",
-                      marginTop: "rem",
-                      height: "3rem",
-                      width: "3rem",
+                      marginTop: "vh",
+                      height: "3.5vh",
+                      width: "3vh",
                       position: "relative",
-                      top: "3.5rem",
-                      left: "7rem",
+                      top: "4.5vh",
+                      left: "8vh",
                       backgroundColor: "white",
                       opacity: ".7",
                       zIndex: "5",
@@ -52,17 +51,23 @@ const Trending = () => {
                   >
                     sold
                     <br /> out
+                    
                   </div>
-                  <img className="img-trending" src={data.image} />
+
+                  <img
+                  className= "img-bycategory img-fluid w-100 px-2 "
+                  src={data.image} />
                   <div
                     style={{
                       display: "flex",
-                      margin: ".5rem .5rem",
+                      margin: ".5rem rem",
                       lineHeight: ".1rem",
                       width: "15rem",
                     }}
                   >
-                    <div>
+                    <div style={{
+                        marginTop: "2vh",
+                    }}>
                       <p style={{ fontWeight: "bold", fontSize: ".7rem" }}>
                         {data.p}
                       </p>
@@ -73,21 +78,21 @@ const Trending = () => {
                         {data.pkr}
                       </p>
                     </div>
-                    <div style={{ float: "right" }}>
+                     <div >
+
                       <MdOutlineShoppingBag
                         style={{
                           float: "right",
-                          marginTop: "-2rem",
-                          fontSize: "1.5rem",
+                          marginTop: "-4.2vh",
+                          fontSize: "1.5vh",
                           position: "relative",
-                          top: "rem",
-                          left: "4rem",
+                          top: "",
+                          left: "11vh",
                         }}
                       />
                     </div>
                   </div>
                 </div>
-              </Col>  
 
               ))}
             </Carousel.Item>

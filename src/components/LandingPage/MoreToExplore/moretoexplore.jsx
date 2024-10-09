@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { moreToExplore } from "../../../Data/data";
 import "./style.css"
+import { Col } from "react-bootstrap";
 
 const Moretoexplore = () => {
   // Split the data into chunks of 3
@@ -27,6 +28,8 @@ const Moretoexplore = () => {
           {chunkData.map((dataChunk, index) => (
           <Carousel.Item className="caro3" key={index}>
             {dataChunk.map((data, idx) => (
+                            <Col xs={12} md={4} lg={4}>
+
               <div key={idx} >
                 <img  style={{display:'flex',margin:'.5rem',}} 
                   className="img-moretoexplore"
@@ -36,6 +39,8 @@ const Moretoexplore = () => {
 
                 <p style={{ fontSize: "1.2rem" ,fontWeight:'600'}}>{data.para}</p>
               </div>
+              </Col>
+
             ))}
           </Carousel.Item>
         ))}

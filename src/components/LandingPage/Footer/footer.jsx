@@ -45,7 +45,6 @@ const Footer = () => {
             Contact Us
           </p>
         </div>
-
       </div>
       <div 
         style={{

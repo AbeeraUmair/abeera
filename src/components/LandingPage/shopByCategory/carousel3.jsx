@@ -26,17 +26,22 @@ function Carousel3() {
         }}
       >
         {chunkData.map((dataChunk, index) => (
-          <Carousel.Item className="caro3" key={index}>
+       <Carousel.Item className="caro3 container-fluid px-3 mx-auto " key={index}>
+                   
             {dataChunk.map((data, idx) => (
+                  
               <div key={idx} style={{ textAlign: "center" }}>
                 <img
-                  className="img-bycategory"
+                  className= "img-bycategory img-fluid w-100 px-2 "
                   src={data.image}
                 />
                 <p style={{ fontSize: "1.5vh" ,fontWeight:'600'}}>{data.para}</p>
               </div>
             ))}
+             
           </Carousel.Item>
+        
+
         ))}
       </Carousel>
       </center>

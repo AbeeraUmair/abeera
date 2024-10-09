@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { styledByYou } from "../../../Data/data";
+import { Col } from "react-bootstrap";
 
 const Stylebyu = () => {
   // Split the data into chunks of 4
@@ -30,6 +31,8 @@ const Stylebyu = () => {
         {chunkData.map((dataChunk, index) => (
           <Carousel.Item className="caro3" key={index}>
             {dataChunk.map((data, idx) => (
+                                          <Col xs={12} md={4} lg={4}>
+
               <div key={idx} style={{ margin: ".2rem", textAlign: "center",lineHeight:'.2rem' }}>
                 <img style={{width:'14rem',height:'14rem',margin:'',}}  src={data.image} />
                 
@@ -41,6 +44,7 @@ const Stylebyu = () => {
                   <p style={{ fontSize: "1rem", }}>{data.dress}</p>
                 
               </div>
+              </Col>
             ))}
           </Carousel.Item>
         ))}

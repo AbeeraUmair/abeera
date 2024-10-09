@@ -338,7 +338,6 @@ const styledByYou = [
     nameId:'@libahghauri',
     para:"wearing our",
     dress:'3 Piece-Embroidered Raw Silk Suit',
-
   },
   {
     id:'8',
@@ -347,7 +346,6 @@ const styledByYou = [
     nameId:'@vogueayesha',
     para:"wearing our",
     dress:'Seersucker Shirt- Dress with Pocket',
-
   },  
 ]
 
