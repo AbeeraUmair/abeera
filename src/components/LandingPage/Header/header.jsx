@@ -13,7 +13,7 @@ const Header = () => {
         <div className="header-icon">
           <IoSearch className="header-icons" />
           <FaTruckDroplet className="header-icons" />
-          <MdOutlineShoppingBag className="header-icons" />
+         <MdOutlineShoppingBag className="header-icons" />
         </div>
       </div>
     </div>
