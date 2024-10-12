@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {carouselData} from '../../../Data/data';
 
 function Carousel1() {
+  
   return (
     <div>
     <Carousel >
