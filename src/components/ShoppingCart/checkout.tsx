@@ -1,6 +1,6 @@
 import React from 'react'
 
-const checkout = () => {
+const Checkout = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const checkout = () => {
   )
 }
 
-export default checkout
+export default Checkout
