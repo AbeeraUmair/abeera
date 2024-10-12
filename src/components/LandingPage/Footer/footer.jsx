@@ -9,7 +9,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div style={{marginTop : '5rem',}}>
+    <div style={{marginTop : '5rem',}}>  
       <div
         style={{ display: "flex", backgroundColor: "#f6f6f8", padding: "1rem",}}
       >
